@@ -55,7 +55,6 @@ Toda la información se almacena utilizando LocalStorage y SessionStorage, simul
 
 ```text
 STYLEHUB/
-C:.
 │   admin.html
 │   cart.html
 │   dashboard.html
@@ -64,9 +63,6 @@ C:.
 │   product.html
 │   README.md
 │   
-├───.vscode
-│       settings.json
-│       
 ├───components
 │       modal-dialog.js
 │       navbar.js
@@ -100,7 +96,7 @@ C:.
         admin.css
         ecommerce.css
         global.css
-        history.css
+```
 
 ---
 
@@ -144,6 +140,31 @@ El proyecto utiliza LocalStorage para almacenar:
 Y SessionStorage para:
 
 - Sesión del administrador
+
+---
+
+## ▶️ Cómo ejecutarlo
+
+No necesita instalación ni servidor de base de datos.
+
+```bash
+git clone https://github.com/250930/stylehub-ecommerce.git
+cd stylehub-ecommerce
+```
+
+Abre `index.html` con **Live Server** (VS Code) o con cualquier servidor estático, porque los Web Components usan módulos ES:
+
+```bash
+npx serve .
+```
+
+**Acceso de demostración al panel administrativo** (`admin.html`)
+
+| Correo | Contraseña |
+|---|---|
+| `admin@gmail.com` | `123456` |
+
+> Las credenciales están fijas en el código porque es un proyecto de demostración sin backend.
 
 ---
 
